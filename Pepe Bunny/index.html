@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROOK</title>
+    <link rel="icon" type="image/png" href="images/logo head.png">
+    <meta name="theme-color" content="#8DFC50">
+
+    <!-- preload head styles -->
+    <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+    <!-- <link rel="preload" href="../assets/css/theme/main.min.css" as="style"> -->
+
+    <!-- preload footer scripts -->
+    <link rel="preload" href="../assets/js/uikit.min.js" as="script">
+    <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+    <link rel="preload" href="../assets/js/jquery.min.js" as="script">
+    <link rel="preload" href="../assets/js/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="../assets/js/feather.min.js" as="script">
+    <link rel="preload" href="../assets/js/typed.min.js" as="script">
+    <link rel="preload" href="../assets/js/anime.min.js" as="script">
+    <link rel="preload" href="../assets/js/app.js" as="script">
+    <link rel="preload" href="../assets/js/data-attr-helper.js" as="script">
+    <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+    <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+    <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+
+    <!-- <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script"> -->
+
+    <!-- include styles -->
+    <script src="js/app-head.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- include scripts -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-components.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B5JJP7FY91');
+    </script>
+    <script async type="module">
+        import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'https://cdn.jsdelivr.net/npm/web-vitals@2.1.2/dist/web-vitals.js';
+        function sendToGoogleAnalytics({ name, delta, id }) {
+            gtag('event', name, {
+                event_category: 'Web Vitals',
+                event_label: id,
+                value: Math.round(name === 'CLS' ? delta * 1000 : delta),
+                non_interaction: true,
+            });
+        }
+        /* CLS FCP FID LCP TTFB */
+        getCLS(sendToGoogleAnalytics);
+        getFCP(sendToGoogleAnalytics);
+        getFID(sendToGoogleAnalytics);
+        getLCP(sendToGoogleAnalytics);
+        getTTFB(sendToGoogleAnalytics);
+    </script>
+</head>
+<body class="uni-body" style=" background-image: linear-gradient(to right, #030406, #030406)">
+
+    <!-- Dark/Light toggle -->
+
+    <!-- Dark/Light toggle -->
+ 
+
+    <!-- Menu modal -->
+    <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+        <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+            <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                <div class="uni-mobile-menu-content">
+                    <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                        <div class="uk-flex-1">
+                            <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                <i class="uk-icon-small" data-feather="arrow-left"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                        </div>
+                        <div class="uk-flex-1"></div>
+                    </header>
+                    <hr class="uk-margin-remove">
+                    <div class="uk-card uk-card-small">
+                        <div class="uk-panel">
+                            <ul class="uk-nav uk-nav-default">
+                          
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                             
+                             
+                                <li><a href="#token">Tokenomics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connect wallet modal -->
+  
+
+    <!-- Wrapper start -->
+    <div class="wrap uk-overflow-hidden">
+
+        <!-- Header start -->
+        <header class="uni-header uk-position-top">
+            <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top">
+                <div class="uk-container">
+                    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                        <div class="uk-navbar-top">
+                            <div class="uk-navbar-left uk-flex-1@m">
+                                <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href="#"> <img class="uk-visible dark:uk-hidden" width="120" src="fonts/nerko-light.svg" alt="Nerko" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="120" src="images/logo head.png" alt="Nerko" loading="lazy"> </a>
+                            </div>
+
+                            <div class="uk-navbar-center">
+                                <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 40" data-uk-navbar-bound>
+                                  
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                             
+                                  
+                                    <li><a href="#token">Tokenomics</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                <div class="uk-navbar-item uk-visible@m">
+                                    <ul class="uk-subnav uk-subnav-small">
+                                        <li>
+                                            <a href="https://x.com/Groook_Ai?s=09"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/GroookAI"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-telegram" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                              </svg></i></a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="uk-navbar-item uk-hidden@m">
+                                    <a href="#uni_mobile_menu" data-uk-toggle>
+                                        <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header end -->
+
+        <!-- Hero start -->
+        <div id="uni_hero" class="uni-hero uk-section-2xlarge uk-section-xlarge@m uk-padding-remove-bottom@m uk-panel" style=" background-image: url(images/pots.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="uk-position-top uk-position-z-index-negative uk-overflow-hidden uk-blend-overlay" data-uk-height-viewport>
+                <!-- <img class="uk-position-top-left uk-position-fixed uk-blur-large" style="left: -4%; top: -4%" width="500" src="fonts/gradient-circle.svg" alt="Circle"> -->
+                <!-- <img class="uk-position-bottom-right uk-position-fixed uk-blur-large" style="right: -4%; bottom: -4%" width="500" src="fonts/gradient-circle.svg" alt="Circle"> -->
+            </div>
+            <div class="uk-position-top uk-position-z-index-negative uk-opacity-50" data-uk-height-viewport>
+                <div class="uk-position-cover uk-background-cover dark:uk-hidden" data-src="../assets/images/gradient-02.png" data-uk-img></div>
+            </div>
+            <div class="uk-panel uk-position-z-index">
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        <div class="uk-grid uk-grid-2xlarge uk-flex-middle uk-flex-between" data-uk-grid data-uk-height-viewport="offset-top: true;">
+                            <div class="uk-width-6-12@m">
+                                <div class="uk-panel uk-position-z-index uk-text-center uk-text-left@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                                    <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m pops"> Introducing Grook Ai</h2>
+                                    <p class="uk-text-xlarge">
+                                        The ultimate financial companion for the modern crypto enthusiast!
+                                    </p>
+                                    <a href="https://app.uniswap.org/tokens/ethereum/" class="uk-button uk-button-large@m uk-button-gradient uk-margin-small-top">
+                                        <span>Buy Now</span>
+                                        <i class="uk-icon-small unicon-arrow-up-right uk-text-bold"></i>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            <div class="uk-width-6-12@m uk-flex-center">
+                                <div class="uk-panel" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
+                                    <img src="images/16.png">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero end -->
+
+        
+
+        <!-- brands start -->
+        <div class="uni-brands uk-padding-3xlarge-top uk-padding-medium-bottom uk-padding-remove-top@m uk-padding-xlarge-bottom@m uk-panel uk-overflow-hidden" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
+           <br><br> <div class="uk-container">
+                <div class="uk-panel uk-text-center dark:uk-text-white">
+                    <header class="uk-panel uk-flex-center uk-flex-middle uk-text-center">
+                        <span class="uk-text-overline uk-text-bold">Featured On:</span>
+                    </header>
+                    <div class="uk-grid uk-child-width-1-2 uk-child-width-expand@m uk-flex-middle uk-flex-center uk-grid uk-margin-medium-top" data-uk-grid>
+                      
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+                                <a href="https://app.uniswap.org/tokens/ethereum/"><img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="images/pancake.png" alt="Uniswap" data-uk-svg></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+                                <a href="https://www.dextools.io/app/en/ether/pair-explorer/"><img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="images/poocoin.png" alt="dextools" data-uk-svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="images/divider-01.png" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 400;">
+
+        <!-- how it works end -->
+        <div id="about" class="uni-faq uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-padding-2xlarge-bottom@m">
+            <div class="uk-container">
+                <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                    <div class="uk-panel">
+                        <h2 class="uk-h3 uk-h1@m">
+                           About<span class="uk-text-gradient">Grook Ai</span>
+                        </h2>
+                    </div>
+                </header>
+
+
+                <div class="uk-panel uk-margin-top uk-margin-xlarge-top@m" style="text-align: center;" data-uk-grid data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;">
+               
+                    <!-- Navigation -->
+
+                    
+                        <p class="uk-flex-center mat">Groook AI is a software platform that provides users with access to a range of financial services and digital asset management tools. It also offers exclusive rewards and promotions for users who invest in ETH and BSC. With Groook AI, you can purchase, store, and manage your digital assets securely and conveniently. With its intuitive interface and advanced features, Groook AI is the perfect choice for those looking to take control of their financial future.</p>
+                </div>
+
+                
+
+
+           
+
+            
+
+            </div>
+        </div>
+       
+
+   
+
+        <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="images/divider-01.png" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+        <div id="token" class="uni-numbers uk-section uk-section-large@m">
+            <div class="uk-container">
+                <header class="uk-grid-xsmall  uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                    <div class="uk-panel uk-text-center">
+                        <h2 class="uk-h3 uk-h1@m">Our
+                            <span class="uk-text-gradient">Tokenomics</span></h2>
+                    </div>
+                   
+              
+                </header>   <div class="uk-panel uk-margin-top uk-margin-xlarge-top@m" data-uk-grid data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;">
+                    <p class="mat">~20% of the supply will be distributed to holders <br>
+                        ~6% will be locked <br>
+                        ~10% will be airdropped to provide holders <br>
+                        ~And then the rest of the percentage will be burnt immediately after launch</p>
+                    <p class=" mat">TAX: <br>
+                        0% Buy <br>
+                        0% Sell<br>
+                        <br>
+                        <!-- Anti Whale <br>  -->
+                        Max Wallet: 100%<br>
+                        <br>
+                        Contract Address Will be uploaded soon. <br>
+                        <!-- Email: support@chaintoolseth.xyz -->
+                    </p>
+                
+                  
+                </div>
+              <br><br>
+              
+                <div class="uk-panel">
+                    <!-- <img class="uk-position-bottom-left uk-text-secondary uni-animation-delay-large" width="32" src="images/bitcoin-01.png" alt="Object" style="bottom: -32%; left: 30%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: -250; delay: 200;">
+                    <img class="uk-position-top-right" width="24" src="images/ethereum-01.png" alt="Object" style="top: -25%; right: 25%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: -250; delay: 200;"> -->
+                    <div class="uk-grid uk-grid-large uk-grid-divider uk-child-width-expand@m uk-text-center" data-uk-grid data-anime="targets: > *; opacity:[0, 1]; scale:[0.5, 1]; onview: -250; delay: anime.stagger(100);">
+                        <!-- <div>
+                            <div class="uk-panel">
+                              <img src="/images/popasssss.png">
+                            </div>
+                        </div> -->
+                        <div>
+                            <div class="uk-panel">
+                                <h4 class="uk-h3 uk-h1@m uk-margin-xsmall uk-margin@m">0%</h4>
+                                <span>Buy Tax</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <h4 class="uk-h3 uk-h1@m uk-margin-xsmall uk-margin@m">0%</h4>
+                                <span>Sell Tax</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <h4 class="uk-h3 uk-h1@m uk-margin-xsmall uk-margin@m">1M</h4>
+                                <span>Total Supply</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <h4 class="uk-h3 uk-h1@m uk-margin-xsmall uk-margin@m">100%</h4>
+                                <span>Locked Liquidity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- newsletter start -->
+     
+
+        <!-- newsletter end -->
+
+        <!-- roadmap end -->
+        
+        <div class="uk-container">
+            <header class="uk-grid-xsmall  uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                <div class="uk-panel uk-text-center">
+                    <h2 class="uk-h3 uk-h1@m">Our
+                        <span class="uk-text-gradient">Roadmap</span></h2>
+                </div>
+               
+          
+            </header>   <div class="uk-panel uk-margin-top uk-margin-xlarge-top@m" data-uk-grid data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;">
+
+                <p class="mat">1. First quarter of the year i'm going to launch a token after launching the website will be live, socials will be live, white paper will be live and then the launch <br>
+                2. Second quarter of the year listing and partnership and calls <br>
+            3. Third quarter CMC and CG fast tracking,cex listing, Chinese partnership and adoptions <br>
+        4. Fourth quarter adoption from the communities and lots of them</p>
+
+
+        <div class="uk-container">
+            <header class="uk-grid-xsmall  uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                <div class="uk-panel uk-text-center">
+                    <h2 class="uk-h3 uk-h1@m">Incoming
+                        <span class="uk-text-gradient">Utility</span></h2>
+                </div>
+               
+          
+            </header>   <div class="uk-panel uk-margin-top uk-margin-xlarge-top@m" data-uk-grid data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;">
+                <p class="mat">~NFTs, <br>
+                    ~Game programming, <br> ~Fight to earn victory game</p>
+     
+        <!-- team end -->
+
+        <!-- faq end -->
+     
+
+        
+
+        <!-- cta end -->
+    </div>
+
+    <!-- footer start -->
+    <footer class="uni-footer uk-section uk-section-xlarge@m uk-border-top">
+        <div class="uk-container">
+            <div class="uk-panel uk-position-z-index">
+                <div class="uk-grid" data-uk-grid>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-panel uk-width-medium@m">
+                            <a href="#" class="uk-logo">
+                                <img class="uk-visible dark:uk-hidden" width="120" src="fonts/nerko-light.svg" alt="Nerko">
+                                <img class="uk-hidden dark:uk-visible" width="120" src="images/buttom.png" alt="Nerko">
+                            </a>
+                            <h2>DeFi Innovation</h2>
+                            <p class="uk-margin-medium@m">Get ready to take control of your financial future with Groook AI. Stay ahead of the curve, make informed investment decisions, and watch your portfolio grow. Join the Groook AI community today and embrace the exciting world of cryptocurrency with confidence!
+
+
+
+
+
+
+
+                            </p>
+                            <ul class="uk-subnav uk-subnav-small">
+                                <li>
+                                    <a href="https://x.com/Groook_Ai?s=09"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/GroookAI"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                      </svg></i></a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="uk-grid" data-uk-grid>
+                            <div class="uk-width-1-2 uk-width-expand@m">
+                                <ul class="uk-list">
+                                    <li class="uk-nav-header">Quick LINKS</li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                
+                                 
+                                    <li><a href="#token">Tokenomics</a></li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-expand@m">
+                                <ul class="uk-list">
+                                    <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/">Chart</a></li>
+                                    <li><a href="https://etherscan.io/token/">Etherscan</a></li>
+                                    <!-- <li><a href="https://medium.com/">Medium</a></li> -->
+                                    <!-- <li><a href="https://gitbook.io">Gitbook</a></li> -->
+                                 
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-panel uk-text-small uk-margin-medium-top uk-margin-2xlarge-top@m">
+                    <div class="uk-grid uk-child-width-auto@m uk-flex-between" data-uk-grid>
+                        <!-- <div>
+                            <ul class="uk-subnav uk-subnav-small">
+                                <li><a href="privacy.html">Privacy policy</a></li>
+                                <li><a href="terms.html">Terms of use</a></li>
+                                <li class="uk-margin-small-left">
+                                    <a href="#" data-uk-totop data-uk-scroll><i class="uk-icon uk-icon-small unicon-chevron-up"></i></a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="uk-flex-first@m">
+                            <p>© 2023 Grook. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- include scripts -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/feather.min.js"></script>
+    <script defer src="js/typed.min.js"></script>
+    <script defer src="js/anime.min.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/data-attr-helper.js"></script>
+    <script defer src="js/swiper-helper.js"></script>
+    <script defer src="js/typed-helper.js"></script>
+    <script defer src="js/anime-helper.js"></script>
+
+    <!-- <script defer src="../assets/js/anime-helper-defined-timelines.js"></script> -->
+    <script>
+        // Schema toggle via URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const getSchema = urlParams.get("schema");
+        if (getSchema === "dark") {
+            document.documentElement.classList.add("uk-dark");
+            localStorage.setItem("darkMode", "1");
+        } else if (getSchema === "light") {
+            document.documentElement.classList.remove("uk-dark");
+            localStorage.setItem("darkMode", "0");
+        }
+    </script>
+
+
+</body></html>
